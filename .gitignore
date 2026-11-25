@@ -1,0 +1,15 @@
+# Secrets / local state
+.wrangler/
+.tmp/
+.dev.vars
+node_modules/
+*.log
+
+# Android
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+*.apk
+*.aab

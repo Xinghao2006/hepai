@@ -1,0 +1,16 @@
+{
+  "name": "shared-timetable-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test",
+    "db:local": "wrangler d1 execute shared-timetable --local --file=./schema.sql",
+    "db:remote": "wrangler d1 execute shared-timetable --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.168.0"
+  }
+}

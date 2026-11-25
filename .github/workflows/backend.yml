@@ -1,0 +1,31 @@
+name: Backend
+
+on:
+  push:
+    paths:
+      - "backend/**"
+      - ".github/workflows/backend.yml"
+  pull_request:
+    paths:
+      - "backend/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: backend/package-lock.json
+      - name: Install
+        working-directory: backend
+        run: npm ci --ignore-scripts
+      - name: Syntax check
+        working-directory: backend
+        run: |
+          for file in src/*.js; do node --check "$file"; done
+      - name: Unit tests
+        working-directory: backend
+        run: npm test

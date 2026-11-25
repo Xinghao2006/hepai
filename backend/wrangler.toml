@@ -1,0 +1,17 @@
+name = "shared-timetable-api"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "shared-timetable"
+database_id = "REPLACE_WITH_YOUR_D1_ID"
+
+[[durable_objects.bindings]]
+name = "SPACE_ROOM"
+class_name = "SpaceRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["SpaceRoom"]

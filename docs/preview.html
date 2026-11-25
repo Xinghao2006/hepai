@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+:root{--paper:#F2EEE3;--ink:#1F2A24;--green:#2F5D45;--pink:#C96A86;--muted:#7C8279}
+*{box-sizing:border-box}
+html,body{margin:0;width:2400px;height:1500px;overflow:hidden}
+body{
+  background:
+    radial-gradient(900px 700px at 92% -8%, #FFF9EB 0%, rgba(255,249,235,0) 62%),
+    radial-gradient(900px 700px at -10% 108%, #EADFCB 0%, rgba(234,223,203,0) 60%),
+    var(--paper);
+  color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+}
+.shell{position:relative;width:2400px;height:1500px;padding:82px 90px}
+.brand{font-size:84px;font-weight:800;letter-spacing:-4px;line-height:1}
+.en{font:700 18px/1 Arial;letter-spacing:5px;color:var(--green);margin-top:10px}
+.tag{font-size:35px;color:#5F665C;margin-top:34px;letter-spacing:1px}
+.sub{font-size:18px;color:#9A9688;margin-top:14px;letter-spacing:2px}
+.badge{position:absolute;right:90px;top:92px;border:1px solid #CEDDCB;background:#E8F0E4;color:var(--green);
+  border-radius:999px;padding:15px 25px;font:700 14px/1 Arial;letter-spacing:2px}
+.row{position:absolute;left:90px;right:90px;top:340px;display:flex;gap:92px;justify-content:center}
+.phone{width:430px;height:930px;border-radius:42px;background:#FBF8F0;border:2px solid #D8D0BE;
+  box-shadow:0 35px 70px rgba(35,42,35,.18),0 6px 18px rgba(35,42,35,.08);position:relative;overflow:hidden}
+.phone img{display:block;width:430px;height:930px;object-fit:cover}
+.label{position:absolute;top:286px;font:700 12px Arial;letter-spacing:2px;color:#898B7D}
+.label b{display:block;font:800 16px/1.2 "Microsoft YaHei";letter-spacing:0;color:var(--ink);margin-top:4px}
+.footer{position:absolute;left:90px;right:90px;bottom:58px;border-top:1px solid #D8D0BE;padding-top:18px;
+  display:flex;justify-content:space-between;font:11px Arial;letter-spacing:1px;color:#969282}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="brand">合拍</div>
+  <div class="en">IN SYNC</div>
+  <div class="tag">两张课表，放进同一周。</div>
+  <div class="sub">各自上传 · 空档自动对齐 · 共同安排</div>
+  <div class="badge">REAL COMPOSE UI  /  SANITIZED DEMO DATA</div>
+
+  <div class="label" style="left:463px">01 / 周历<b>共同周历</b></div>
+  <div class="label" style="left:985px">02 / 空档<b>共同空档</b></div>
+  <div class="label" style="left:1507px">03 / 日详情<b>按天查看</b></div>
+
+  <div class="row">
+    <div class="phone"><img src="screenshots/week-real.png" alt="周历"></div>
+    <div class="phone"><img src="screenshots/free-real.png" alt="空档"></div>
+    <div class="phone"><img src="screenshots/day-real.png" alt="日详情"></div>
+  </div>
+
+  <div class="footer">
+    <span>REAL COMPOSE UI · DEMO DATA · NO PERSONAL TIMETABLE DATA</span>
+    <span>MIT / 2026</span>
+  </div>
+</div>
+</body>
+</html>
