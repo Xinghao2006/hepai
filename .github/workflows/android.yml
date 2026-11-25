@@ -25,9 +25,9 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: Validate wrapper
         uses: gradle/actions/wrapper-validation@v4
-      # ktlint is available locally (`./gradlew :app:ktlintCheck`); CI runs the
-      # compile/test/assemble gates below. The GitHub-hosted lint environment
-      # differs from the local Windows runner and is tracked separately.
+      - name: Lint
+        working-directory: android
+        run: ./gradlew --no-daemon :app:ktlintCheck
       - name: Unit tests
         working-directory: android
         run: ./gradlew --no-daemon :app:testDebugUnitTest
