@@ -17,8 +17,8 @@ A small, self-hostable **two-person timetable merge** framework:
 The preview above is captured from the actual Compose code using the debug-only
 `DemoActivity` and generic demo data. It is not a redrawn mockup.
 
-![Android](https://img.shields.io/badge/Android-Kotlin%20%2B%20Compose-2F5D45)
-![Backend](https://img.shields.io/badge/Backend-Cloudflare%20Workers-C96A86)
+[![Android CI](https://github.com/Xinghao2006/hepai/actions/workflows/android.yml/badge.svg)](https://github.com/Xinghao2006/hepai/actions/workflows/android.yml)
+[![Backend CI](https://github.com/Xinghao2006/hepai/actions/workflows/backend.yml/badge.svg)](https://github.com/Xinghao2006/hepai/actions/workflows/backend.yml)
 ![License](https://img.shields.io/badge/License-MIT-1F2A24)
 
 ## Why
